@@ -1,0 +1,30 @@
+.menu{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 20px;
+}
+
+.menu-social{
+    display:flex;
+    align-items: center;
+}
+
+.menu-item{
+    background: #FFF;
+    border-radius: 4px;
+    color: #132742;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu-item:hover{
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+}

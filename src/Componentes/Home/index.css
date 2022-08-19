@@ -1,0 +1,135 @@
+.container-home{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo{
+    align-items: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img{
+    animation: slideX 2s linear 2s infinite;
+}
+
+/* animação para os lados */
+
+@keyframes slideX{
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(4px);
+    }
+
+}
+
+.logo h1{
+    font-size: 3.5rem;
+}
+
+.logo p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.area-input{
+    animation: slideY 2s;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+}
+
+/* animação subindo area input */
+
+@keyframes slideY{
+    from{
+        transform: translateY(90px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.area-input div{
+    align-items: center;
+    background: rgb(255,255,255, 0.15);
+    border-radius: 4px;
+    display: flex;
+    height: 46px;
+    justify-content: center;
+    width: 100%;
+}
+
+.area-input svg{
+    margin: 0 8px;
+}
+
+.area-input input{
+    background: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 1.15rem;
+    height: 46px;
+    outline: none;
+    width: 100%;
+}
+
+.area-input input::placeholder{
+    color: rgb(255,255,255, 0.35);
+}
+
+.area-input button{
+    border: 0;
+    border-radius: 4px;
+    color: #132742;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 46px;
+    margin-top: 0.5rem;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.area-input button:hover{
+    transform: scale(1.01);
+}
+
+
+/* adaptação mobile */
+
+@media screen and (max-width: 620px){
+    .logo img{
+        width: 95px;
+    }
+
+    .logo h1{
+        font-size: 2.3rem;
+    }
+    
+    .logo p{
+        font-size: 1.05rem;
+    }
+
+    .area-input{
+        width: 85%;
+    }
+
+    .area-input div:active{
+        outline: 2px solid #000;
+    }
+    
+    .area-input button:active{
+        outline: 2px solid #000;
+    }
+}
